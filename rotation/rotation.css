@@ -1,0 +1,41 @@
+body
+{
+margin:0;
+padding:0;
+background:black;
+}
+.kl{
+height:120px;
+width:120px;
+margin:200px auto;
+position:relative;
+padding:40px;
+}
+.earth{
+height:120px;
+width:120px;
+background:url(earth.jpg) no-repeat;
+background-size: cover;
+border-radius: 50%
+}
+.moon{
+height:40px;
+width:40px;
+background:url(moon.jpg) no-repeat;
+background-size: cover;
+border-radius: 50%;
+position: absolute;
+top: 0;
+left: 0;
+box-shadow:20px 20px 20px 10px ;
+animation: ro 5s infinite;
+}
+@keyframes ro{
+50%{
+left: calc(100% - 40px);
+top: calc(100% - 40px);
+}
+100%{
+z-index: -1;
+}
+}
